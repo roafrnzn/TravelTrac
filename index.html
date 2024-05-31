@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TravelTrac</title>
+    <link rel="icon" href="./files/logo.png">
+    <link rel="stylesheet" type="text/css" href="./css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" integrity="sha512-NnhR1BW7CpfT/lBjS3ip5oUsWOba0MQiqyUtgUdW6j1pHyuCLsLmzVCEb5v7lVKrTOhsb1sTj+IhlG9gpg8LYA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Paytone+One&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+    <script src="./js/script.js"></script>
+</head>
+<body>
+
+<!-- Background Video & Header -->
+
+<div class="banner">
+    <video src="./files/bgvid.mp4" type="video/mp4" autoplay muted loop poster="./files/poster.jpg"></video>
+    <!-- Header -->
+    <div class="content" id="home">
+        <nav>
+            <img src="./files/logo.png" class="logo" alt="TravelTrac Logo" title="TravelTrac">
+            <ul class="navbar">
+                <li>
+                    <a href="#home" aria-label="Home">Home</a>
+                    <a href="#locations" aria-label="Locations">Locations</a>
+                    <a href="./about.html" aria-label="About Us">About Us</a>
+                </li>
+            </ul>
+        </nav>
+        <div class="title">
+            <h1>TRAVELTRAC</h1>
+            <p>Discover the heartbeat of the Philippines with us!</p>
+        </div>
+    </div>
+</div>
+
+<!-- Locations -->
+
+<section class="locations" id="locations">
+    <div class="location-title">
+        <h2>Locations</h2>
+    </div>
+    <div class="container">
+        <!-- Each location div -->
+        <div class="location">
+            <div class="location-card">
+                <h2 class="name">Calle Crisologo</h2>
+                <span class="place">Vigan</span>
+                <img src="./files/l1.png" class="location-img" alt="Image of Calle Crisologo, Vigan">
+                <button class="popup-btn" aria-label="Quick View for Vigan">Quick View</button>
+            </div>
+            <div class="popup-view">
+                <div class="popup-card">
+                    <button class="close-btn" aria-label="Close"><i class="fas fa-times"></i></button>
+                    <div class="info">
+                        <h2>Calle Crisologo<br><span>Vigan</span></h2>
+                        <p>Step back in time as you stroll along the cobblestone streets of Calle Crisologo in Vigan, Philippines. This UNESCO World Heritage site transports you to the colonial era with its well-preserved Spanish colonial architecture. Admire the charming ancestral houses adorned with capiz shell windows, wooden balconies, and antique cobblestones. The street is lined with quaint shops offering local crafts and delicacies. As you wander through the narrow alleys, you'll feel the rich history and cultural heritage of Vigan come to life.</p>
+                        <div class="slider-container">
+                            <div class="slider">
+                                <div class="slides">
+                                    <div class="slide"><img src="./files/vigan/a1.png" alt="Image 1" usemap="#a1Map">
+                                        <map name="a1Map">
+                                            <area shape="rect" coords="0, 0, 650, 362" alt="Vigan A1" href="https://whc.unesco.org/en/list/502/" target="_blank" title="Crisologo Street, Vigan City">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/vigan/a2.png" alt="Image 2" usemap="#a2Map">
+                                        <map name="a2Map">
+                                            <area shape="rect" coords="0, -1, 651, 361" alt="Vigan A2" href="https://groupgarcia.weebly.com/products.html" target="_blank" title="Vigan T-Shirt">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/vigan/a3.png" alt="Image 3" usemap="#a3Map">
+                                        <map name="a3Map">
+                                            <area shape="rect" coords="0, 1, 651, 362" alt="Vigan A3" href="https://groupgarcia.weebly.com/products.html" target="_blank" title="Vigan Keychains">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/vigan/a4.png" alt="Image 4" usemap="#a4Map">
+                                        <map name="a4Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Vigan A4" href="https://groupgarcia.weebly.com/products.html" target="_blank" title="Vigan Antiques">
+                                            </map>
+                                    </div>
+                                    <div class="slide"><img src="./files/vigan/a5.png" alt="Image 5" usemap="#a5Map">
+                                        <map name="a5Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Vigan A5" href="https://www.pinterest.ph/pin/350577152218144663/" target="_blank" title="Vigan Sunset">
+                                            </map>
+                                    </div>
+                                </div>
+                                <button class="prev" aria-label="Previous">&#10094;</button>
+                                <button class="next" aria-label="Next">&#10095;</button>
+                            </div>
+                        </div>
+                        <div id="map-container">
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3803.627864892576!2d120.3865775742139!3d17.572895597436407!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x338e656308bfb267%3A0xc81fb703f1e000f3!2sCalle%20Crisologo!5e0!3m2!1sen!2sph!4v1716116006404!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="location">
+            <div class="location-card">
+                <h2 class="name">Ifugao</h2>
+                <span class="place">Banaue Rice Terraces</span>
+                <img src="./files/l2.png" class="location-img" alt="Image of Banaue Rice Terraces, Ifugao">
+                <button class="popup-btn" aria-label="Quick View for Vigan">Quick View</button>
+            </div>
+            <div class="popup-view">
+                <div class="popup-card">
+                    <button class="close-btn" aria-label="Close"><i class="fas fa-times"></i></button>
+                    <div class="info">
+                        <h2>Banaue Rice Terraces<br><span>Ifugao</span></h2>
+                        <p>Marvel at the breathtaking landscape of the Banaue Rice Terraces in Ifugao, a masterpiece of ancient engineering and a testament to the ingenuity of the indigenous people. Carved into the mountain slopes, these terraces have been tending to rice crops for over 2,000 years. The emerald-green terraces create a mesmerizing mosaic that blends seamlessly with the surrounding mountains. Visitors can trek along the terraces, interacting with the local Ifugao people, and gaining a deep appreciation for their agricultural traditions.</p>
+                        <div class="slider-container">
+                            <div class="slider">
+                                <div class="slides">
+                                    <div class="slide"><img src="./files/ifugao/b1.png" alt="Image 1" usemap="#b1Map">
+                                        <map name="b1Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Ifugao B1" href="https://guidetothephilippines.ph/articles/ultimate-guides/northern-philippines-travel-guide" target="_blank" title="Banaue Rice Terraces">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/ifugao/b2.png" alt="Image 2" usemap="#b2Map">
+                                        <map name="b2Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Ifugao B2" href="https://guidetothephilippines.ph/articles/what-to-experience/banaue-tourist-spots" target="_blank" title="Local family milling rice in Banaue">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/ifugao/b3.png" alt="Image 3" usemap="#b3Map">
+                                        <map name="b3Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Ifugao B3" href="https://caranddrivermanila.com/2020/02/04/rice-terraces-of-batad-banaue-with-rent-a-car-with-driver-manila-to-banaue-and-batad/" target="_blank" title="Traditional houses in the mountain regions">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/ifugao/b4.png" alt="Image 4" usemap="#b4Map">
+                                        <map name="b4Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Ifugao B4" href="https://www.beontheroad.com/2013/10/batad-rice-terraces-8th-wonder-of-world.html?m=0#" target="_blank" title="Tappiyah Falls in Batad Village, Banaue">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/ifugao/b5.png" alt="Image 5" usemap="#b5Map">
+                                        <map name="b5Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Ifugao B5" href="https://www.unusualtraveler.com/batad-banaue-rice-terraces-philippines/" target="_blank" title="Rice Terraces of the Philippine Cordilleras">
+                                            </map>
+                                        </div>
+                                </div>
+                                <button class="prev" aria-label="Previous">&#10094;</button>
+                                <button class="next" aria-label="Next">&#10095;</button>
+                            </div>
+                        </div>
+                        <div id="map-container">
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3816.864839043319!2d121.05500787419895!3d16.931958115767316!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x339029cc257489c3%3A0x67585763fe71abd!2sBanaue%20Rice%20Terraces!5e0!3m2!1sen!2sph!4v1716118907581!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="location">
+            <div class="location-card">
+                <h2 class="name">Bohol</h2>
+                <span class="place">Chocolate Hills</span>
+                <img src="./files/l3.png" class="location-img" alt="Image of Chocolate Hills, Bohol">
+                <button class="popup-btn" aria-label="Quick View for Vigan">Quick View</button>
+            </div>
+            <div class="popup-view">
+                <div class="popup-card">
+                    <button class="close-btn" aria-label="Close"><i class="fas fa-times"></i></button>
+                    <div class="info">
+                        <h2>Chocolate Hills<br><span>Bohol</span></h2>
+                        <p>Discover the enchanting Chocolate Hills of Bohol, a geological wonder that paints the landscape with rolling hills as far as the eye can see. During the dry season, the hills turn a rich shade of brown, resembling delectable chocolate kisses, hence the name. A visit to the Chocolate Hills Complex provides panoramic views from the observation deck, allowing you to take in the surreal beauty of these natural wonders. This unique landscape promises a delightful and memorable experience for nature enthusiasts.</p>
+                        <div class="slider-container">
+                            <div class="slider">
+                                <div class="slides">
+                                    <div class="slide"><img src="./files/bohol/c1.png" alt="Image 1" usemap="#c1Map">
+                                        <map name="c1Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Bohol C1" href="http://www.island-on-map.com/bohol.html" target="_blank" title="Chocolate Hills">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/bohol/c2.png" alt="Image 2" usemap="#c2Map">
+                                        <map name="c2Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Bohol C2" href="https://guidetothephilippines.ph/destinations-and-attractions/chocolate-hills-adventure-park" target="_blank" title="Chocolate Hills Adventure Park Bike Zip">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/bohol/c3.png" alt="Image 3" usemap="#c3Map">
+                                        <map name="c3Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Bohol C3" href="https://guidetothephilippines.ph/articles/ultimate-guides/chocolate-hills-bohol-travel-guide" target="_blank" title="Chocolate Hills ATV Rental">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/bohol/c4.png" alt="Image 4" usemap="#c4Map">
+                                        <map name="c4Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Bohol C4" href="https://blog.animalogic.ca/animals/tarsier" target="_blank" title="Tarsier">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/bohol/c5.png" alt="Image 5" usemap="#c5Map">
+                                        <map name="c5Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Bohol C5" href="https://wetravelphilippines.com/bohol-itinerary/bohol-solo-travel/" target="_blank" title="Sagbayan Peak Viewpoint">
+                                            </map>
+                                        </div>
+                                </div>
+                                <button class="prev" aria-label="Previous">&#10094;</button>
+                                <button class="next" aria-label="Next">&#10095;</button>
+                            </div>
+                        </div>
+                        <div id="map-container">
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15724.982372836712!2d124.129375833024!3d9.829728787107483!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33aa3da1a65d72f7%3A0xd89c856a3307dd67!2sChocolate%20Hills!5e0!3m2!1sen!2sph!4v1716118996986!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="location">
+            <div class="location-card">
+                <h2 class="name">Manila</h2>
+                <span class="place">Intramuros</span>
+                <img src="./files/l4.png" class="location-img" alt="Image of Intramuros, Manila">
+                <button class="popup-btn" aria-label="Quick View for Vigan">Quick View</button>
+            </div>
+            <div class="popup-view">
+                <div class="popup-card">
+                    <button class="close-btn" aria-label="Close"><i class="fas fa-times"></i></button>
+                    <div class="info">
+                        <h2>Intramuros<br><span>Manila</span></h2>
+                        <p>Immerse yourself in the historical heart of Manila as you explore Intramuros, the walled city that encapsulates centuries of Philippine history. Walk along cobbled streets and visit iconic landmarks such as Fort Santiago, Manila Cathedral, and San Agustin Church. The architecture reflects a mix of Spanish and Filipino influences, offering a glimpse into the country's colonial past. Intramuros is not just a physical space but a journey through time, making it a must-visit destination for history buffs and culture seekers.</p>
+                        <div class="slider-container">
+                            <div class="slider">
+                                <div class="slides">
+                                    <div class="slide"><img src="./files/manila/d1.png" alt="Image 1" usemap="#d1Map">
+                                        <map name="d1Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Manila D1" href="https://www.thecrazytourist.com/15-best-day-trips-from-manila/" target="_blank" title="Fort Santiago">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/manila/d2.png" alt="Image 2" usemap="#d2Map">
+                                        <map name="d2Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Manila D2" href="https://guidetothephilippines.ph/articles/ultimate-guides/intramuros-manila-travel-guide" target="_blank" title="Manila City Hall">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/manila/d3.png" alt="Image 3" usemap="#d3Map">
+                                        <map name="d3Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Manila D3" href="https://www.holidayscalendar.com/event/rizal-day/" target="_blank" title="José Rizal Monument">
+                                            </map>
+                                    </div>
+                                    <div class="slide"><img src="./files/manila/d4.png" alt="Image 4" usemap="#d4Map">
+                                        <map name="d4Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Manila D4" href="https://guidetothephilippines.ph/trips-and-experiences/philippines-vacation-packages/5-day-heritage-nature-ilocos-benguet" target="_blank" title="Kalesa at Intramuros">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/manila/d5.png" alt="Image 5" usemap="#d5Map">
+                                        <map name="d5Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Manila D5" href="https://guidetothephilippines.ph/articles/ultimate-guides/manila-travel-guide" target="_blank" title="The metropolitan center of the Philippines, Manila!">
+                                            </map>
+                                        </div>
+                                </div>
+                                <button class="prev" aria-label="Previous">&#10094;</button>
+                                <button class="next" aria-label="Next">&#10095;</button>
+                            </div>
+                        </div>
+                        <div id="map-container">
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7722.346360324628!2d120.96924663790352!3d14.589205726527164!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3397ca3d1375e1fb%3A0x49ebfa658c0ba08!2sIntramuros%2C%20Manila%2C%201002%20Metro%20Manila!5e0!3m2!1sen!2sph!4v1716119029408!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="location">
+            <div class="location-card">
+                <h2 class="name">Zambales</h2>
+                <span class="place">Mapanuepe Lake</span>
+                <img src="./files/l5.png" class="location-img" alt="Image of Mapanuepe Lake, Zambales">
+                <button class="popup-btn" aria-label="Quick View for Vigan">Quick View</button>
+            </div>
+            <div class="popup-view">
+                <div class="popup-card">
+                    <button class="close-btn" aria-label="Close"><i class="fas fa-times"></i></button>
+                    <div class="info">
+                        <h2>Mapanuepe Lake<br><span>Zambales</span></h2>
+                        <p>Discover the tranquility of Mapanuepe Lake in Zambales, a hidden oasis nestled amidst rolling hills. Immerse yourself in the serene ambiance by strolling along the lakeside or engaging in peaceful boating activities. Mapanuepe Lake offers a brief escape into nature, providing a calm retreat for those seeking respite from the demands of urban life. Enjoy the unspoiled beauty and pristine environment that make this lake a perfect destination for relaxation and restoration.</p>
+                        <div class="slider-container">
+                            <div class="slider">
+                                <div class="slides">
+                                    <div class="slide"><img src="./files/zambales/e1.png" alt="Image 1" usemap="#e1Map">
+                                        <map name="e1Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Zambales E1" href="https://www.tripzilla.ph/lake-mapanuepe-new-zealand-zambales/36476/" target="_blank" title="Mapanuepe Lake">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/zambales/e2.png" alt="Image 2" usemap="#e2Map">
+                                        <map name="e2Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Zambales E2" href="https://hiketomountains.com/lake-mapanuepe-san-marcelino-zambales-travel-guide/" target="_blank" title="Trees at Mapanuepe Lake">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/zambales/e3.png" alt="Image 3" usemap="#e3Map">
+                                        <map name="e3Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Zambales E3" href="https://hiketomountains.com/lake-mapanuepe-san-marcelino-zambales-travel-guide/" target="_blank" title="A wonderful view of the freshwater lake and nearby hills">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/zambales/e4.png" alt="Image 4" usemap="#e4Map">
+                                        <map name="e4Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Zambales E4" href="https://hiketomountains.com/lake-mapanuepe-san-marcelino-zambales-travel-guide/" target="_blank" title="The camping area of Lake Mapanuepe">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/zambales/e5.png" alt="Image 5" usemap="#e5Map">
+                                        <map name="e5Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Zambales E5" href="https://philippines.licas.news/2023/03/28/lake-mapanuepe-and-the-aetas-journey-to-education/" target="_blank" title="The stunning beauty of Lake Mapanuepe">
+                                            </map>
+                                        </div>
+                                </div>
+                                <button class="prev" aria-label="Previous">&#10094;</button>
+                                <button class="next" aria-label="Next">&#10095;</button>
+                            </div>
+                        </div>
+                        <div id="map-container">
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d30833.5760678437!2d120.27228675237599!3d14.98176518248085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33967c5e446bf91f%3A0xa948dc36f9db4091!2sMapanuepe%20Lake!5e0!3m2!1sen!2sph!4v1716119060465!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="location">
+            <div class="location-card">
+                <h2 class="name">Cebu</h2>
+                <span class="place">Kawasan Falls</span>
+                <img src="./files/l6.png" class="location-img" alt="Image of Kawasan Falls, Cebu">
+                <button class="popup-btn" aria-label="Quick View for Cebu">Quick View</button>
+            </div>
+            <div class="popup-view">
+                <div class="popup-card">
+                    <button class="close-btn" aria-label="Close"><i class="fas fa-times"></i></button>
+                    <div class="info">
+                        <h2>Kawasan Falls<br><span>Cebu</span></h2>
+                        <p>Embark on a journey to the mesmerizing Kawasan Falls in Cebu, where turquoise waters cascade down lush greenery, creating a picturesque oasis. The multi-tiered waterfalls offer a refreshing escape, inviting visitors to take a dip in the cool, clear pools. Adventurous souls can engage in canyoneering, adding an adrenaline rush to the natural beauty. The surrounding tropical scenery and the rhythmic sound of cascading water make Kawasan Falls a haven for nature lovers and thrill-seekers alike.</p>
+                        <div class="slider-container">
+                            <div class="slider">
+                                <div class="slides">
+                                    <div class="slide"><img src="./files/cebu/f1.png" alt="Image 1" usemap="#f1Map">
+                                        <map name="f1Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Cebu F1" href="https://cebuinsider.com/badian-tourist-spots/" target="_blank" title="Kawasan Falls">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/cebu/f2.png" alt="Image 2" usemap="#f2Map">
+                                        <map name="f2Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Cebu F2" href="https://matadornetwork.com/watch/visit-kawasan-falls-philippines/" target="_blank" title="Kawasan Falls">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/cebu/f3.png" alt="Image 3" usemap="#f3Map">
+                                        <map name="f3Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Cebu F3" href="https://www.traveloka.com/en-ph/explore/destination/cebu-adventure-junkie-checklist/64135" target="_blank" title="Trekking up the highest peaks">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/cebu/f4.png" alt="Image 4" usemap="#f4Map">
+                                        <map name="f4Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Cebu F4" href="https://www.remotelands.com/travelogues/just-got-easier-see-cebu-5-reasons-go/" target="_blank" title="Taking a selfie above Kawasan Falls">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/cebu/f5.png" alt="Image 5" usemap="#f5Map">
+                                        <map name="f5Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Cebu F5" href="https://www.getyourguide.com/badian-l106002/cebu-kawasan-falls-canyoneering-and-mantayupan-falls-t485931/" target="_blank" title="Kawasan Falls">
+                                            </map>
+                                        </div>
+                                </div>
+                                <button class="prev" aria-label="Previous">&#10094;</button>
+                                <button class="next" aria-label="Next">&#10095;</button>
+                            </div>
+                        </div>
+                        <div id="map-container">
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3931.5569242755914!2d123.36971807034524!3d9.803505954955225!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33abc071985da1cd%3A0x357899ef7e6324cf!2sKawasan%20Falls!5e0!3m2!1sen!2sph!4v1716119118522!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div>                        
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="location">
+            <div class="location-card">
+                <h2 class="name">Siargao</h2>
+                <span class="place">Cloud 9</span>
+                <img src="./files/l7.png" class="location-img" alt="Image of Cloud 9, Siargao">
+                <button class="popup-btn" aria-label="Quick View for Siargao">Quick View</button>
+            </div>
+            <div class="popup-view">
+                <div class="popup-card">
+                    <button class="close-btn" aria-label="Close"><i class="fas fa-times"></i></button>
+                    <div class="info">
+                        <h2>Cloud 9<br><span>Siargao</span></h2>
+                        <p>Surfer's paradise awaits at Cloud 9 in Siargao, a renowned surf break that attracts wave riders from around the globe. Feel the adrenaline as you ride the powerful waves of the Pacific Ocean. Beyond surfing, the laid-back atmosphere of Siargao offers a perfect blend of beach vibes and island tranquility. Enjoy breathtaking sunsets, explore hidden lagoons, and embrace the easygoing lifestyle of this surfing haven. Discover vibrant coral reefs through snorkeling and diving adventures.</p>
+                        <div class="slider-container">
+                            <div class="slider">
+                                <div class="slides">
+                                    <div class="slide"><img src="./files/siargao/g1.png" alt="Image 1" usemap="#g1Map">
+                                        <map name="g1Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Siargao G1" href="https://veronikasadventure.com/40-minutes-audio-guided-tour-in-siargao/" target="_blank" title="Cloud 9 Surfing Area">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/siargao/g2.png" alt="Image 2" usemap="#g2Map">
+                                        <map name="g2Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Siargao G2" href="https://www.jonnymelon.com/cloud-9-siargao/" target="_blank" title="Surf Point, Siargao">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/siargao/g3.png" alt="Image 3" usemap="#g3Map">
+                                        <map name="g3Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Siargao G3" href="https://smart-travel.thevagrantsurfer.com/surfing-in-the-philippines-in-2022-pure-adrenaline-surfing-on-crystal-clear-waters-4a0c619c6de9" target="_blank" title="Pure Adrenaline Surfing on Crystal Clear Waters">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/siargao/g4.png" alt="Image 4" usemap="#g4Map">
+                                        <map name="g4Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Siargao G4" href="https://ampersart.com/cloud-9-siargao/" target="_blank" title="Surfboard rental">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/siargao/g5.png" alt="Image 5" usemap="#g5Map">
+                                        <map name="g5Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Siargao G5" href="https://www.thecoastalcampaign.com/cloud-9-siargao/" target="_blank" title="Siargao Island">
+                                            </map>
+                                        </div>
+                                </div>
+                                <button class="prev" aria-label="Previous">&#10094;</button>
+                                <button class="next" aria-label="Next">&#10095;</button>
+                            </div>
+                        </div>
+                        <div id="map-container">
+                            <div class="map-responsive">
+                                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d7862.96320971463!2d126.15699583760721!3d9.809856333152878!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x330409ed5e3da33d%3A0xd2bbc5516a66d5cb!2sCloud%209%20Surfing%20Area!5e0!3m2!1sen!2sph!4v1716119159409!5m2!1sen!2sph" width="400" height="300" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                            </div>
+                        </div> 
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="location">
+            <div class="location-card">
+                <h2 class="name">Boracay</h2>
+                <span class="place">White Beach</span>
+                <img src="./files/l8.png" class="location-img" alt="Image of White Beach, Boracay">
+                <button class="popup-btn" aria-label="Quick View for Boracay">Quick View</button>
+            </div>
+            <div class="popup-view">
+                <div class="popup-card">
+                    <button class="close-btn" aria-label="Close"><i class="fas fa-times"></i></button>
+                    <div class="info">
+                        <h2>White Beach<br><span>Boracay</span></h2>
+                        <p>Bask in the beauty of White Beach in Boracay, consistently hailed as one of the world's best beaches. Powder-fine white sand meets crystal-clear azure waters, creating a postcard-perfect tropical paradise. Whether you're into water sports, beach parties, or simply unwinding under the swaying palm trees, White Beach caters to every beachgoer's dream. The vibrant nightlife and diverse dining options complete the experience, making Boracay a must-visit destination for sun-seekers and party enthusiasts alike.</p>
+                        <div class="slider-container">
+                            <div class="slider">
+                                <div class="slides">
+                                    <div class="slide"><img src="./files/boracay/h1.png" alt="Image 1" usemap="#h1Map">
+                                        <map name="h1Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Boracay H1" href="https://guidetothephilippines.ph/articles/ultimate-guides/boracay-travel-guide" target="_blank" title="White Beach, Boracay Island">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/boracay/h2.png" alt="Image 2" usemap="#h2Map">
+                                        <map name="h2Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Boracay H2" href="https://guidetothephilippines.ph/trips-and-experiences/kayaking-tours/paddle-boarding-in-boracay" target="_blank" title="Paddleboaring, Boracay Beach">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/boracay/h3.png" alt="Image 3" usemap="#h3Map">
+                                        <map name="h3Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Boracay H3" href="https://deadpresidentspub.com/have-you-been-drinking-beer-the-wrong-way/" target="_blank" title="Boracay's Nightlife">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/boracay/h4.png" alt="Image 4" usemap="#h4Map">
+                                        <map name="h4Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Boracay H4" href="https://guidetothephilippines.ph/articles/ultimate-guides/boracay-white-beach-guide" target="_blank" title="Tropical Palm Trees in Boracay">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/boracay/h5.png" alt="Image 5" usemap="#h5Map">
+                                        <map name="h5Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Boracay H5" href="https://guidetothephilippines.ph/articles/ultimate-guides/boracay-white-beach-guide" target="_blank" title="White Beach, Boracay Island">
+                                            </map>
+                                        </div>
+                                    <div class="slide"><img src="./files/boracay/h6.png" alt="Image 6" usemap="#h6Map">
+                                        <map name="h6Map">
+                                            <area shape="rect" coords="0, 1, 650, 361" alt="Boracay H6" href="https://us.trip.com/travel-guide/destination/boracay-island-610/" target="_blank" title="Tropical Sunset Silhouette Sailing Boats in Boracay, Philippines">
+                                            </map>
+                                        </div>
+                                </div>
+                                <button class="prev" aria-label="Previous">&#10094;</button>
+                                <button class="next" aria-label="Next">&#10095;</button>
+                            </div>
+                        </div>
+                        <div id="map-container">
+                        <div class="map-responsive">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31226.542577752727!2d121.89270488511247!3d11.952483378449122!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x33a53c22c3a8466b%3A0x443e5166ae9cf4b2!2sWhite%20Beach!5e0!3m2!1sen!2sph!4v1716120056029!5m2!1sen!2sph" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>    
+</section>
+
+<!-- Footer -->
+
+<section class="footer">
+    <div class="foot">
+        <div class="footer-content">
+            <div class="footlinks">
+                <h4>Connect</h4>
+                <div class="social">
+                    <a href="https://www.facebook.com/profile.php?id=61559803406593" target="_blank" aria-label="Facebook"><i class='bx bxl-facebook'></i></a>
+                    <a href="https://www.instagram.com/traveltrac12/" target="_blank" aria-label="Instagram"><i class='bx bxl-instagram'></i></a>
+                    <a href="https://twitter.com/TravelT57326" target="_blank" aria-label="Twitter"><i class='bx bxl-twitter'></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+    <script src="./js/script.js"></script>
+
+
+</body>
+</html>
